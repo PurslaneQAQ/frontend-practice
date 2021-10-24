@@ -8,7 +8,9 @@ module.exports = {
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
   },
-  devServer: { static: path.join(__dirname, 'src'), port: 3000 },
+  devServer: {
+    static: path.join(__dirname, 'src'), port: 3000, hot: true, historyApiFallback: true,
+  },
   module: {
     rules: [
       {

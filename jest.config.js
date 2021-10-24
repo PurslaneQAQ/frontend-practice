@@ -15,6 +15,6 @@ module.exports = async () => ({
     '!**/vendor/**',
   ],
   moduleNameMapper: {
-    '\\.(css|less|scss|svg)$': '<rootDir>/__mocks__/styleMock.ts',
+    '\\.(css|less|scss|svg|png|jpg|jpeg)$': '<rootDir>/__mocks__/fileMock.ts',
   },
 });

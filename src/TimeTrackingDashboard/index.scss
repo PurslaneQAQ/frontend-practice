@@ -1,0 +1,42 @@
+@import 'base';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+#TimeTrackingDashboard {
+  @apply text-base font-light font-sans;
+  min-height: calc(100vh - 32px);
+}
+
+.Primary-bold {
+  @apply relative text-xl lg:text-2xl;
+}
+
+.Primary {
+  @apply text-lg lg:text-xl;
+}
+
+.Tertiary, .Quaternary {
+  color: $Pale-Blue;
+}
+
+.Quaternary {
+  @apply text-tiny;
+}
+
+.Card-group {
+  @apply m-2 lg:m-4;
+  .Card:not(:first-child){
+    margin-top: -24px;
+  }
+}
+
+.Card {
+  @apply relative lg:w-56 xl:w-64 w-96 min-w-0 lg:py-7 lg:px-8 p-6;
+  max-width: calc(100vw - 32px);
+  border-radius: 12px;
+  &.active {
+    background-color: $Desaturated-blue;
+  }
+}
+
