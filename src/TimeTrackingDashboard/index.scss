@@ -4,7 +4,7 @@
 @import "tailwindcss/utilities";
 
 #TimeTrackingDashboard {
-  @apply text-base font-light font-sans;
+  @apply text-white text-base font-light font-sans;
   min-height: calc(100vh - 32px);
 }
 

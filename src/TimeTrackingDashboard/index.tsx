@@ -5,11 +5,10 @@ import ActivityGrid from './components/activity_grid';
 
 import { MockProfile, TIME_FRAME } from './consts';
 import { ActivityProps } from './components/activity';
-import Footer from '../common/components/footer';
+import Footer from '../components/footer';
 import data from './data.json';
 
 import './index.scss';
-import rootStyle from './_export.modules.scss';
 
 function TimeTrackingDashbaord() {
   const [timeframe, setTimeframe] = useState<TIME_FRAME>(TIME_FRAME.MONTHLY);
@@ -31,7 +30,6 @@ function TimeTrackingDashbaord() {
         id="TimeTrackingDashboard"
         className="py-10 mx-auto p-4 flex flex-col lg:flex-row justify-center items-center"
       >
-        <style>{`body {background-color: ${rootStyle.BGPrimary}; color: ${rootStyle.TextPrimary}`}</style>
         <div className="Card-group min-w-0">
           <Profile {...MockProfile} />
           <Tabs timeframe={timeframe} setTimeframe={setTimeframe} />
