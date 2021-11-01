@@ -1,0 +1,59 @@
+@import '../../base';
+
+.sa-nav{
+  @apply relative;
+  &__item {
+    @apply py-4 text-md transition cursor-pointer text-opacity-90 hover:text-opacity-100;
+    color: $Dark-grayish-blue;
+    &:hover{
+      color: $Very-dark-grayish-blue;
+    }
+  }
+  &__menu{
+    @apply absolute py-6 bg-white flex flex-col items-center left-8 right-8 top-24 z-10;
+    &::before{
+      content: "";
+      position:absolute;
+      width: 0; 
+      height: 0; 
+      top: -20px;
+      right: 0;
+      z-index: -1;
+      border-top: 40px solid transparent;
+      border-bottom: 40px solid transparent;
+      border-right: 40px solid white;
+    }
+    &__btn {
+      @apply rounded-full uppercase text-base py-4 px-8 text-black;
+      background-color: $Yellow;
+      font-family: $font-stack-serif;
+    }
+  }
+
+  &__hidden{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sa-nav {
+    &__item {
+      @apply px-4 md:px-6 lg:px-8 text-ml text-white text-opacity-90 hover:text-opacity-100;
+    }
+    &__more{
+      @apply hidden;
+    }
+    &__menu{
+      @apply relative top-0 right-0 left-0 py-0 flex-row items-center bg-transparent;
+      &::before{
+        display: none;
+      }
+      &__btn {
+        @apply bg-white py-6 px-10 text-md text-black hover:bg-opacity-30 hover:text-white;
+      }
+    }
+    &__hidden{
+      display: flex;
+    }
+  }
+}

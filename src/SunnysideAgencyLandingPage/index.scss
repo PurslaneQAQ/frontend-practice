@@ -1,0 +1,56 @@
+@import "./base";
+
+.SunnysideAgency {
+  font-family: $font-stack-sans;
+  @apply font-semibold text-base lg:text-md;
+
+  h1, h2, h3 {
+    font-family: $font-stack-serif;
+  }
+
+  h1, h2 {
+    @apply uppercase tracking-widest text-center;
+  }
+}
+
+.sa{
+  &-font-serif {
+    font-family: $font-stack-serif;
+  }
+  
+  &-bg-yellow{
+    background-color: $Yellow;
+  }
+  
+  &-bg-blue{
+    background-color: $Dark-blue;
+  }
+  
+  &-bg-soft-red{
+    background-color: $Soft-red;
+  }
+  
+  &-bg-moderate-cyan {
+    background-color: $Dark-moderate-cyan;
+  }
+  
+  &-text-dark-cyan{
+    color: $Dark-desaturated-cyan;
+  }
+  
+  &-text-dark-primary{
+    color: $Very-dark-desaturated-blue;
+  }
+
+  &-text-dark-secondary{
+    color: $Very-dark-grayish-blue;
+  }
+
+  &-text-dark-tertiary{
+    color: $Dark-grayish-blue;
+  }
+
+  &-text-dark-quaternary{
+    color: $Grayish-blue;
+  }
+}

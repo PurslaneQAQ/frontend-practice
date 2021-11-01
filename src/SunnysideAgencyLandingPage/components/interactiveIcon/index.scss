@@ -1,0 +1,18 @@
+.sa{
+  &-interactive-icon {
+    @apply overflow-hidden relative z-10; 
+    &-origin {
+      @apply overflow-hidden transition-opacity cursor-pointer;
+      &:hover{
+        opacity: 0;
+      }
+    }
+
+    &-duplicate {
+      @apply absolute top-0;
+      z-index: -1;
+      filter: drop-shadow(0px -999px 0px white);
+      transform: translateY(999px);
+    }
+  }
+}
