@@ -1,9 +1,9 @@
 @import 'base';
 
-#TipCalculator {
+.TipCalculator {
   background-color: $primary-bg;
   width: 100vw;
-  height: calc(100vh - 32px);
+  min-height: calc(100vh - 32px);
   padding: 40px 0;
   display: flex;
   flex-direction: column;

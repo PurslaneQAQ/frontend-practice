@@ -26,10 +26,7 @@ function TimeTrackingDashbaord() {
 
   return (
     <>
-      <div
-        id="TimeTrackingDashboard"
-        className="py-10 mx-auto p-4 flex flex-col lg:flex-row justify-center items-center"
-      >
+      <div className="TimeTrackingDashboard py-10 mx-auto flex flex-col lg:flex-row justify-center items-center">
         <div className="Card-group min-w-0">
           <Profile {...MockProfile} />
           <Tabs timeframe={timeframe} setTimeframe={setTimeframe} />

@@ -9,7 +9,7 @@ import Footer from '../components/footer';
 function TipCalculator() {
   return (
     <>
-      <div id="TipCalculator">
+      <div className="TipCalculator">
         <style>{`body {background-color: ${rootStyle.BGPrimary}; color: ${rootStyle.TextPrimary}}`}</style>
         <img alt="logo" className="App-logo" src={Logo} />
         <Container />

@@ -3,8 +3,9 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-#TimeTrackingDashboard {
-  @apply text-white text-base font-light font-sans;
+.TimeTrackingDashboard {
+  @apply text-white text-base font-light;
+  font-family: $font-stack;
   min-height: calc(100vh - 32px);
 }
 

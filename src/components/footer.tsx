@@ -6,7 +6,7 @@ const Footer:React.FC = () => (
     <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer">Frontend Mentor</a>
     .
     {' Coded by '}
-    <a href="https://portfolio.yaorui.info">Yaorui</a>
+    <a href="http://portfolio.yaorui.info">Yaorui</a>
     .
   </div>
 );

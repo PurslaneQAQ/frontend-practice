@@ -9,12 +9,12 @@ module.exports = {
       mini: '0.75rem',
       tiny: '0.875rem',
       base: '1rem',
+      md: ['1.125rem', '2rem'],
+      ml: '1.25rem',
       lg: '1.6rem',
       xl: ['2.4rem', '2.7rem'],
       '2xl': '3.2rem',
-    },
-    fontFamily: {
-      sans: ['Rubik', 'Helvetica Neue', 'sans-serif'],
+      '3xl': '3.6rem',
     },
     backgroundColor: (theme) => ({
       ...theme('colors'),
@@ -34,6 +34,7 @@ module.exports = {
       },
       height: {
         18: '4.5rem',
+        '600px': '600px',
       },
     },
   },

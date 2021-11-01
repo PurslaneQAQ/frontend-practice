@@ -12,7 +12,7 @@ The initial settings are from:
 npx create-react-app name-of-app --template typescript
 ```
 
-But as you can imagine, it's very different from the beginning. 
+But as you can imagine, a lot of things has been changed and the project is very different from the beginning. 
 
 ## Quick Start
 ```
