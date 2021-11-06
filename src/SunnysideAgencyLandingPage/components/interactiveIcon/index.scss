@@ -1,0 +1,16 @@
+.sa{
+  &-interactive-icon {
+    @apply overflow-hidden z-10 relative cursor-pointer;
+    &-origin {
+      @apply transition-opacity;
+      &:hover {
+        opacity: 0;
+      }
+    }
+
+    &-duplicate {
+      @apply absolute top-0 filter brightness-0 invert;
+      z-index: -1;
+    }
+  }
+}

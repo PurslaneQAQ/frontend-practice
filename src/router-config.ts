@@ -1,5 +1,6 @@
 import TimeTrackingDashboardStyle from './TimeTrackingDashboard/_export.modules.scss';
 import TipCalculatorStyle from './TipCalculator/_export.modules.scss';
+import SunnysideAgencyStyle from './SunnysideAgencyLandingPage/_export.modules.scss';
 import TipCalculator from './TipCalculator';
 import TimeTrackingDashbaord from './TimeTrackingDashboard';
 import SunnysideAgencyLandingPage from './SunnysideAgencyLandingPage';
@@ -23,7 +24,7 @@ const routerConfig:(PageProps&{path:string})[] = [
     title: 'Sunnyside Agency Landing Page',
     path: '/sunnyside-agency-landing-page',
     Comp: SunnysideAgencyLandingPage,
-    // bodyStyle: TimeTrackingDashboardStyle,
+    bodyStyle: SunnysideAgencyStyle,
   },
 ];
 
